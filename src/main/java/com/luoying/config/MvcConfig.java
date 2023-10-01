@@ -9,19 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
     @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        // 对swagger的请求不进行拦截
-        String[] excludePatterns = new String[]{"/swagger-resources/**", "/swagger-resources","/webjars/**", "/v2/**", "/swagger-ui.html/**",
-                "/api", "/api-docs", "/api-docs/**", "/doc.html","/doc.html#/**"};
-        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**").excludePathPatterns(
-                "/user/login",
-                "/user/register",
-                "/user/searchByTags",
-                "/user/recommend"
-        ).excludePathPatterns(excludePatterns).order(0);
-    }
-
-    @Override
     public void addCorsMappings(CorsRegistry registry) {
         //设置允许跨域的路径
         registry.addMapping("/**")

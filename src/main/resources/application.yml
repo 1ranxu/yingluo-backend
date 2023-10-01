@@ -11,7 +11,7 @@ spring:
     active: dev
 
 server:
-  port: 8080
+  port: 8081
   servlet:
     context-path: /api #设置路径前缀与前端一致，默认是/
 
