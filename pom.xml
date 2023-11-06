@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.luoying</groupId>
-    <artifactId>partnerMatching-backend</artifactId>
+    <artifactId>yingluo-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>partnerMatching-backend</name>
+    <name>yingluo-backend</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

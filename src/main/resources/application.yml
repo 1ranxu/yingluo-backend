@@ -1,6 +1,6 @@
 spring:
   application:
-    name: user-cnter
+    name: yingluo-backend
   session:
     timeout: 86400 #session失效时间
     store-type: redis
