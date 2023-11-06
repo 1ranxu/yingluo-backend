@@ -8,4 +8,4 @@ COPY src ./src
 #用RUN执行maven的打包命令,至此镜像制作完成
 RUN mvn package -DskipTests
 #之后使用该镜像运行容器时,会自动执行以下命令,启动
-CMD ["java","-jar","/app/target/userCenter-backend-0.0.1-SNAPSHOT.jar","--spring.profiles.active=prod"]
+CMD ["java","-jar","/app/target/yingluo-backend-0.0.1-SNAPSHOT.jar","--spring.profiles.active=prod"]

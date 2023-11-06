@@ -1,6 +1,7 @@
+DROP DATABASE if exists yingluo;
+create database if not exists yingluo;
 DROP TABLE IF EXISTS user;
-
-create table user_center.user
+create table user
 (
     id           bigint auto_increment comment '(主键) '
         primary key,

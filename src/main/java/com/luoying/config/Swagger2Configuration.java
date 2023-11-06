@@ -35,8 +35,8 @@ public class Swagger2Configuration {
     //api基本信息的配置，信息会在api文档上显示
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
-                .title("LUOYING用户中心")
-                .description("LUOYING用户中心相关接口的文档")
+                .title("LUOYING伙伴匹配")
+                .description("LUOYING伙伴匹配相关接口的文档")
                 .termsOfServiceUrl("http://github.com/1ranxu")
                 .contact(new Contact("ranxu","http://github.com/1ranxu","1574925401@qq.com"))
                 .version("1.0")
